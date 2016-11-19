@@ -1,0 +1,10 @@
+surf=Piunifor3( 2,unitnm,pPerimeter,va,vb );
+[x,pn,ij]=neiborcp(4,5,vb);
+z1=distance(pn(1),pn(2),va);
+[x,pn,ij]=neiborcp(5,6,vb);
+z2=distance(pn(1),pn(2),va);
+[x,pn,ij]=neiborcp(6,4,vb);
+z3=0;
+z=z1+z2+z3;
+zz=2*z;
+tot=pPerimeter(4)+pPerimeter(5)+pPerimeter(6);
